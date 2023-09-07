@@ -48,4 +48,4 @@ cmd /c "cd /d %ProgramFiles(x86)%\Microsoft Office\Office16 & cd /d %ProgramFile
 
 cd ..
 
-echo "Patched.`nInstallation process ended."
+echo "Patched.`n`nInstallation process ended."
