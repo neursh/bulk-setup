@@ -6,14 +6,14 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 mkdir Bulk-Installers
 cd Bulk-Installers
 
-echo "Downloading Visual C++ Setup..."
+echo "Downloading Visual C++ 2015 - 2022 Setup..."
 (New-Object Net.WebClient).DownloadFile("https://aka.ms/vs/17/release/vc_redist.x64.exe", "$pwd\VC_redist.exe")
-echo "Installing Visual C++ Setup... (1/7)`n"
+echo "Installing Visual C++ 2015 - 2022... (1/7)`n"
 .\VC_redist /quiet /norestart
 
 echo "Downloading Python 3.11 Setup..."
 (New-Object Net.WebClient).DownloadFile("https://www.python.org/ftp/python/3.11.5/python-3.11.5-amd64.exe", "$pwd\python.exe")
-echo "Installing Python 3.11 Setup... (2/7)`n"
+echo "Installing Python 3.11... (2/7)`n"
 .\python /quiet
 
 echo "Downloading WinRAR Setup..."
